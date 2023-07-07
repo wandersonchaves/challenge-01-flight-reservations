@@ -25,7 +25,7 @@ defmodule Flightex.Users.CreateOrUpdateTest do
       expected_response = %Flightex.Users.User{
         cpf: "12345678900",
         email: "jp@banana.com",
-        id: response.id,
+        id: "ae304dbc-a1c4-4bea-843e-c25bece2cfd8",
         name: "Jp"
       }
 

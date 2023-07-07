@@ -6,7 +6,7 @@ defmodule Flightex.Factory do
 
   def users_factory do
     %User{
-      id: UUID.uuid4(),
+      id: "ae304dbc-a1c4-4bea-843e-c25bece2cfd8",
       name: "Jp",
       email: "jp@banana.com",
       cpf: "12345678900"
@@ -19,7 +19,7 @@ defmodule Flightex.Factory do
       local_origin: "Brasilia",
       local_destination: "Bananeiras",
       user_id: "12345678900",
-      id: UUID.uuid4()
+      id: "ae304dbc-a1c4-4bea-843e-c25bece2cfd8"
     }
   end
 end

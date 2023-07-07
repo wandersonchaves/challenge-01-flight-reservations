@@ -22,9 +22,14 @@ defmodule Flightex.Users.AgentTest do
 
       response = UserAgent.get(cpf)
 
-
       expected_response =
-        {:ok, %Flightex.Users.User{cpf: cpf, email: "jp@banana.com", id: id, name: "Jp"}}
+        {:ok,
+         %Flightex.Users.User{
+           cpf: cpf,
+           email: "jp@banana.com",
+           id: "ae304dbc-a1c4-4bea-843e-c25bece2cfd8",
+           name: "Jp"
+         }}
 
       assert response == expected_response
     end
@@ -48,7 +53,13 @@ defmodule Flightex.Users.AgentTest do
       response = UserAgent.get(cpf)
 
       expected_response =
-        {:ok, %Flightex.Users.User{cpf: cpf, email: "jp@banana.com", id: id, name: "Jp"}}
+        {:ok,
+         %Flightex.Users.User{
+           cpf: cpf,
+           email: "jp@banana.com",
+           id: "ae304dbc-a1c4-4bea-843e-c25bece2cfd8",
+           name: "Jp"
+         }}
 
       assert response == expected_response
     end
